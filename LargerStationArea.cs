@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using VoxelTycoon.Tracks;
 
-public class ProfitMod : VoxelTycoon.Modding.Mod
+public class LargerStationAreaMod : VoxelTycoon.Modding.Mod
 {
     protected override void Initialize()
     {
@@ -11,7 +11,7 @@ public class ProfitMod : VoxelTycoon.Modding.Mod
 }
 
 [HarmonyPatch(typeof(VehicleStation), "Range", MethodType.Getter)]
-class VehicleStation_getRange_Profitpatch
+class VehicleStation_getRange_LargerStationAreaPatch
 {
     static void Postfix(ref float __result)
     {
@@ -20,7 +20,7 @@ class VehicleStation_getRange_Profitpatch
 }
 
 [HarmonyPatch(typeof(VehicleStation), "InnerRange", MethodType.Getter)]
-class VehicleStation_InnerRange_Profitpatch
+class VehicleStation_InnerRange_LargerStationAreaPatch
 {
     static void Postfix(ref float __result)
     {

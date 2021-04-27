@@ -1,12 +1,10 @@
 # Larger station area Mod for VoxelTycoon
 
 This mod makes the area of stations double the original size.
-- The original inner range is 10.5. This has been set to 21.0.
-- The original outer range is 20.5. This has been set to 41.0.
 
 ![preview](preview.png)
 
-Note: To build the project, `Assembly-CSharp.dll` and `UnityEngine.CoreModule.dll` from the game must be manually placed in `libs/` directory. I'm not committing them since it may violate the EULA.
+Note: To build the project, `Assembly-CSharp.dll`, `UnityEngine.CoreModule.dll` and `0Harmony.dll` from the game must be manually placed in `libs/` directory. I'm not committing them since it may violate the EULA.
 
 ## MIT License
 
